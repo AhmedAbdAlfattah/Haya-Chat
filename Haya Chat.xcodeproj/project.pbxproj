@@ -12,6 +12,7 @@
 		E2B7FE7A2195CFD000A5AA2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B7FE782195CFD000A5AA2D /* Main.storyboard */; };
 		E2B7FE7C2195CFD100A5AA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B7FE7B2195CFD100A5AA2D /* Assets.xcassets */; };
 		E2B7FE7F2195CFD100A5AA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B7FE7D2195CFD100A5AA2D /* LaunchScreen.storyboard */; };
+		E2B7FE882195D32300A5AA2D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7FE872195D32300A5AA2D /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E2B7FE7B2195CFD100A5AA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2B7FE7E2195CFD100A5AA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2B7FE802195CFD100A5AA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B7FE872195D32300A5AA2D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		E2B7FE732195CFD000A5AA2D /* Haya Chat */ = {
 			isa = PBXGroup;
 			children = (
+				E2B7FE862195D30A00A5AA2D /* Controller */,
 				E2B7FE742195CFD000A5AA2D /* AppDelegate.swift */,
 				E2B7FE762195CFD000A5AA2D /* ViewController.swift */,
 				E2B7FE782195CFD000A5AA2D /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				E2B7FE802195CFD100A5AA2D /* Info.plist */,
 			);
 			path = "Haya Chat";
+			sourceTree = "<group>";
+		};
+		E2B7FE862195D30A00A5AA2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2B7FE872195D32300A5AA2D /* LoginController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B7FE772195CFD000A5AA2D /* ViewController.swift in Sources */,
+				E2B7FE882195D32300A5AA2D /* LoginController.swift in Sources */,
 				E2B7FE752195CFD000A5AA2D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,15 +292,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F9CSD83H8;
+				DEVELOPMENT_TEAM = 3BJU4UCYQ2;
 				INFOPLIST_FILE = "Haya Chat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "neon.Haya-Chat";
+				PRODUCT_BUNDLE_IDENTIFIER = "neonz.Haya-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,15 +312,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F9CSD83H8;
+				DEVELOPMENT_TEAM = 3BJU4UCYQ2;
 				INFOPLIST_FILE = "Haya Chat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "neon.Haya-Chat";
+				PRODUCT_BUNDLE_IDENTIFIER = "neonz.Haya-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
