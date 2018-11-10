@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B18B093FD07C2ADE2FDD4514 /* Pods_Haya_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C91439334B850D7D44739C2 /* Pods_Haya_Chat.framework */; };
 		E2B7FE752195CFD000A5AA2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7FE742195CFD000A5AA2D /* AppDelegate.swift */; };
 		E2B7FE772195CFD000A5AA2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7FE762195CFD000A5AA2D /* ViewController.swift */; };
 		E2B7FE7A2195CFD000A5AA2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B7FE782195CFD000A5AA2D /* Main.storyboard */; };
 		E2B7FE7C2195CFD100A5AA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B7FE7B2195CFD100A5AA2D /* Assets.xcassets */; };
 		E2B7FE7F2195CFD100A5AA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B7FE7D2195CFD100A5AA2D /* LaunchScreen.storyboard */; };
 		E2B7FE882195D32300A5AA2D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7FE872195D32300A5AA2D /* LoginController.swift */; };
+		E2BD49532195EFD3009699B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2BD49522195EFD3009699B9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C91439334B850D7D44739C2 /* Pods_Haya_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Haya_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13E7EFCCCB9DBF1F787783FD /* Pods-Haya Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haya Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Haya Chat/Pods-Haya Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		E2B7FE712195CFD000A5AA2D /* Haya Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Haya Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B7FE742195CFD000A5AA2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B7FE762195CFD000A5AA2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		E2B7FE7E2195CFD100A5AA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2B7FE802195CFD100A5AA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2B7FE872195D32300A5AA2D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E2BD49522195EFD3009699B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1829B1B0C7E50A8C96E38FD /* Pods-Haya Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haya Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Haya Chat/Pods-Haya Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18B093FD07C2ADE2FDD4514 /* Pods_Haya_Chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7BA8ADB7EB09F3A67297135 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C91439334B850D7D44739C2 /* Pods_Haya_Chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0A904B3760C39F51070FDC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13E7EFCCCB9DBF1F787783FD /* Pods-Haya Chat.debug.xcconfig */,
+				F1829B1B0C7E50A8C96E38FD /* Pods-Haya Chat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2B7FE682195CFD000A5AA2D = {
 			isa = PBXGroup;
 			children = (
 				E2B7FE732195CFD000A5AA2D /* Haya Chat */,
 				E2B7FE722195CFD000A5AA2D /* Products */,
+				D0A904B3760C39F51070FDC9 /* Pods */,
+				A7BA8ADB7EB09F3A67297135 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				E2B7FE7B2195CFD100A5AA2D /* Assets.xcassets */,
 				E2B7FE7D2195CFD100A5AA2D /* LaunchScreen.storyboard */,
 				E2B7FE802195CFD100A5AA2D /* Info.plist */,
+				E2BD49522195EFD3009699B9 /* GoogleService-Info.plist */,
 			);
 			path = "Haya Chat";
 			sourceTree = "<group>";
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B7FE832195CFD100A5AA2D /* Build configuration list for PBXNativeTarget "Haya Chat" */;
 			buildPhases = (
+				BF1839B0782972AA760C5D3A /* [CP] Check Pods Manifest.lock */,
 				E2B7FE6D2195CFD000A5AA2D /* Sources */,
 				E2B7FE6E2195CFD000A5AA2D /* Frameworks */,
 				E2B7FE6F2195CFD000A5AA2D /* Resources */,
+				2FAAFFC1A3F38C128CDA40D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +163,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B7FE7F2195CFD100A5AA2D /* LaunchScreen.storyboard in Resources */,
+				E2BD49532195EFD3009699B9 /* GoogleService-Info.plist in Resources */,
 				E2B7FE7C2195CFD100A5AA2D /* Assets.xcassets in Resources */,
 				E2B7FE7A2195CFD000A5AA2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FAAFFC1A3F38C128CDA40D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Haya Chat/Pods-Haya Chat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Haya Chat/Pods-Haya Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF1839B0782972AA760C5D3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Haya Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2B7FE6D2195CFD000A5AA2D /* Sources */ = {
@@ -290,6 +371,7 @@
 		};
 		E2B7FE842195CFD100A5AA2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E7EFCCCB9DBF1F787783FD /* Pods-Haya Chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -310,6 +392,7 @@
 		};
 		E2B7FE852195CFD100A5AA2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1829B1B0C7E50A8C96E38FD /* Pods-Haya Chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
